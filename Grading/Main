@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        Database scoreboard = new Database();
+        System.out.println("Type exam scores:, -1 completes:");
+        scoreboard.addScore(reader);
+        scoreboard.printGrades();
+
+        }
+}
